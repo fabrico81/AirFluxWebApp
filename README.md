@@ -6,7 +6,7 @@ This web application has been developed with **Spring Boot**, uses Spring-Data-J
 
 
 ## Body
-The application starts by launching the *main* method in the *  * *AirFluxWebAppApplication.java* class.
+The application starts by launching the *main* method in the *AirFluxWebAppApplication.java* class.
 
 The available endpoints are:
 
