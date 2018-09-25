@@ -6,7 +6,7 @@
 	<groupId>com.airflux</groupId>
 	<artifactId>Air-Flux-WebApp</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<packaging>war</packaging>
+	<packaging>jar</packaging>
 
 	<name>Air-Flux-WebApp</name>
 	<description>Air Flux</description>
@@ -64,6 +64,4 @@
 			</plugin>
 		</plugins>
 	</build>
-
-
 </project>
