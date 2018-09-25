@@ -48,7 +48,7 @@ public class FlightPlanBL implements FlightPlanService {
                 ZonedDateTime zonedDateTime = getZonedDateTime(hour, minute);
 
                 String departure = DateTimeFormatter.ISO_OFFSET_DATE_TIME.format(zonedDateTime);
-                String arrival = DateTimeFormatter.ISO_OFFSET_DATE_TIME.format(zonedDateTime.plusMinutes(Long.valueOf(minute)));
+                String arrival = DateTimeFormatter.ISO_OFFSET_DATE_TIME.format(zonedDateTime.plusMinutes(Long.valueOf(flight.getFlightTime())));
                 flightController.setDeparture(departure);
 
                 flightController.setArrival(arrival);
