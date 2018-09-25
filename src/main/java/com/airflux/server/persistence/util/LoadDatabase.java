@@ -57,7 +57,7 @@ public class LoadDatabase {
 
 
     Aircraft aircraftBerlin = new Aircraft(1L,"Boeing", "737", "","","FL-001","Berlin");
-    Aircraft aircraftMunich = new Aircraft(2L,"Airbus", "A321", "","","FL-0002","Munich");
+    Aircraft aircraftMunich = new Aircraft(2L,"Airbus", "A321", "","","FL-002","Munich");
     Aircraft aircraftLondon = new Aircraft(3L,"Boeing", "747-400", "", "", "FL-003", "London");
     Aircraft aircraftHamburg = new Aircraft(4L,"Airbus", "A320", "", "", "FL-004","Hamburg");
 
@@ -118,7 +118,6 @@ public class LoadDatabase {
             log.info("Preloading " + flightrepository.save(flightHamburg));
             log.info("Preloading " + flightrepository.save(flightHamburg1));
             log.info("Preloading " + flightrepository.save(flightHamburg2));
-            log.info("Preloading " + flightrepository.save(flightHamburg));
         };
     }
 }
