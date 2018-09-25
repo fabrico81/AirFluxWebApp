@@ -3,8 +3,9 @@ package com.airflux.server.persistence.bean;
 
 import lombok.Data;
 
-import javax.persistence.*;
-import java.util.List;
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.Table;
 
 @Data
 @Entity
@@ -18,9 +19,6 @@ public class Aircraft {
     private String description;
     private String registration;
     private String city;
-
-//    @OneToMany(fetch = FetchType.LAZY)
-//    private List<Flight> flight;
 
     public Aircraft(Long idAircraft, String name, String equipment, String code,
                     String description, String registration, String city){
@@ -89,8 +87,4 @@ public class Aircraft {
     public void setIdAircraft(Long idAircraft) {
         this.idAircraft = idAircraft;
     }
-
-//    public List<Flight> getFlight() {return flight;}
-//
-//    public void setFlight(List<Flight> flight) {this.flight = flight;}
 }

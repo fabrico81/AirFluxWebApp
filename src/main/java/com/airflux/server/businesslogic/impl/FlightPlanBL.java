@@ -87,43 +87,4 @@ public class FlightPlanBL implements FlightPlanService {
         }
         return flightsController;
     }
-
-//    private ZonedDateTime getZonedDateTime(String hour, String minute) {
-//        LocalDateTime localDateTime = LocalDateTime.of(LocalDate.now(), LocalTime.of(Integer.valueOf(hour), Integer.valueOf(minute)));
-//        return ZonedDateTime.of(localDateTime, ZoneId.of("Europe/Berlin"));
-//    }
-//
-//    private String[] getTimeSplit(String time) throws Exception{
-//        try{
-//            if(time != null && !time.isEmpty()){
-//                String departureTime = time;
-//                return departureTime.split(":");
-//            }else {
-//                log.debug("Time is empty or null");
-//                return null;
-//            }
-//
-//        }catch (IllegalFormatException ex){
-//            log.debug(ex.getMessage());
-//            throw ex;
-//        }
-//    }
-//
-//    private String getHour(String[] hour){
-//        if(hour != null && hour.length != 0)
-//            return hour[0];
-//        else{
-//            log.debug("Hour null 0r empty");
-//            return null;
-//        }
-//    }
-//
-//    private String getMinute(String[] minute){
-//        if(minute != null && minute.length != 0 )
-//            return minute[1];
-//        else{
-//            log.debug("Minute null 0r empty");
-//            return null;
-//        }
-//    }
 }

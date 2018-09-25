@@ -23,8 +23,6 @@ public class Flight {
     @Column
     private String flightTime;
 
-//    private Long idAircraft;
-
     @ManyToOne
     @JoinColumn(name="idAircraft",insertable=true,updatable=true,nullable = false)
     private Aircraft aircraft;
@@ -57,18 +55,6 @@ public class Flight {
         this.setFlightTime(flightTime);
         this.setAircraft(aircraft);
     }
-
-//    public Flight(Long idFlight, String origin, String destination, String departure, String arrival,
-//                  String equipment, String flightTime, Long idAircraft){
-//        this.setIdFlight(idFlight);
-//        this.setOrigin(origin);
-//        this.setDestination(destination);
-//        this.setDeparture(departure);
-//        this.setArrival(arrival);
-//        this.setEquipment(equipment);
-//        this.setFlightTime(flightTime);
-//        this.setIdAircraft(idAircraft);
-//    }
 
     public String getOrigin() {
         return origin;
@@ -117,14 +103,6 @@ public class Flight {
     public void setFlightTime(String flightTime) {
         this.flightTime = flightTime;
     }
-
-//    public Long getIdAircraft() {
-//        return idAircraft;
-//    }
-//
-//    public void setIdAircraft(Long IdAircraft) {
-//        this.idAircraft = IdAircraft;
-//    }
 
     public Long getIdFlight() {
         return idFlight;
