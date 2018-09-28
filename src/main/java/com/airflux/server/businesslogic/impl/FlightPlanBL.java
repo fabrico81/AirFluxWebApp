@@ -33,6 +33,7 @@ public class FlightPlanBL implements FlightPlanService {
         try {
             Iterable<com.airflux.server.persistence.bean.Flight> flights = flightRepository.findAll();
             List<Flight> flightsController = new ArrayList<>();
+
             for (com.airflux.server.persistence.bean.Flight flight: flights) {
                 Flight flightController = new Flight();
 
