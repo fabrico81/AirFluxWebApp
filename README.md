@@ -3,6 +3,7 @@
 ## Introduction
 
 This web application has been developed with **Spring Boot**, uses Spring-Data-JPA, Spring MVC and a memory-based database.
+There is a small client in ReactJS to see the results of the requests.
 
 
 ## Body
